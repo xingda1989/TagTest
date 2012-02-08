@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<taglib> 
+   <tlibversion>1.0</tlibversion> 
+   <jspversion>1.1</jspversion> 
+  <tag> 
+    <name>displayDate</name> 
+    <tagclass>com.tag.DateTagNoBody</tagclass> 
+    <bodycontent>empty</bodycontent> 
+    <!-- 定义属性 -->  
+    <attribute>  
+       <name>pattern</name> <!-- 属性名字 -->  
+       <type>String</type>  <!-- 属性类型 -->  
+       <requried>false</requried> <!-- 是否必须 -->  
+       <rtexprvale>false</rtexprvale> <!-- 表示是否可以使用JSP表达式  -->  
+  </attribute>  
+  </tag>
+  
+  <tag>
+  	<name>iterator</name>
+  	<tagclass>com.tag.BodyTag</tagclass>
+  	<bodycontent>jsp</bodycontent>
+  	<attribute>
+  		<name>count</name>
+  		<type>int</type>
+  		<requried>false</requried>
+  		<rtexprvale>false</rtexprvale>
+  	</attribute>
+  </tag>          
+</taglib> 
